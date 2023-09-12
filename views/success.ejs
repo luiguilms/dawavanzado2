@@ -1,0 +1,13 @@
+<h1>
+    Éxito
+</h1>
+<p>Estos son los datos que ingresaste:</p>
+<ul>
+    <% Object.keys(data).forEach(key=> { %>
+        <li><strong>
+                <%= key %>:
+            </strong>
+            <%= data[key] %>
+        </li>
+    <% }) %>
+</ul>
